@@ -1,11 +1,59 @@
 <!DOCTYPE html>
 <html>
+
 	<head>
 		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, 
+		 	initial-scale=1, maximum-scale=1, minimum-scale=1, 
+		 	user-scalable=no, minimal-ui, viewport-fit=cover">
+		<meta name="theme-color" content="#2196f3">
 		<title>Framework7 Demo</title>
+		<!-- 导入Framework7的css -->
+		<link rel="stylesheet" href="frameworks/framework7/css/framework7.min.css">
+		<!-- 导入自己的css -->
 		<link rel="stylesheet" href="css/index.css" />
 	</head>
+
 	<body>
-		<p>Hello world!</p>
+		<!--app root 这个要有-->
+		<div id="app">
+			<!--状态栏？-->
+			<div class="statusbar"></div>
+			<!--主viwe class好像必须是view-main 好像是必须有的-->
+			<div class="view view-main">
+				<!--初始化页面，不知道干嘛-->
+				<div data-name="home" class="page">
+					<!--导航栏-->
+					<div class="navbar">
+						<div class="navbar-inner">
+							<div class="left">左</div>
+							<!--标题为啥不是居中的-->
+							<div class="title">标题</div>
+							<div class="right">右</div>
+						</div>
+					</div>
+					
+					<!--工具栏-->
+					<div class="toolbar">
+						<div class="toolbar-inner">
+							<!--工具栏连接-->
+							<a href="page/about.html" class="link">Link 1</a>
+							<a href="#" class="link">Link 2</a>
+						</div>
+					</div>
+					
+					<!--内容，可以滑动-->
+					<div class="page-content">
+						<p>卓能三人行</p>
+					</div>
+				</div>
+
+			</div>
+		</div>
+		<!--导入Framework7的js-->
+		<script type="text/javascript" src="frameworks/framework7/js/framework7.min.js"></script>
+		<!--导入自己的js-->
+		<script type="text/javascript" src="js/index.js"></script>
 	</body>
+
 </html>
