@@ -17,6 +17,11 @@
 	<body>
 		<!--app root 这个要有-->
 		<div id="app">
+			<!--左边栏-->
+			<div class="panel panel-left panel-cover">
+				<p>我的天，这又是干啥的？</p>
+			</div>
+
 			<!--状态栏？-->
 			<div class="statusbar"></div>
 			<!--主viwe class好像必须是view-main 好像是必须有的-->
@@ -32,16 +37,16 @@
 							<div class="right">右</div>
 						</div>
 					</div>
-					
+
 					<!--工具栏-->
 					<div class="toolbar">
 						<div class="toolbar-inner">
-							<!--工具栏连接-->
-							<a href="page/about.html" class="link">Link 1</a>
-							<a href="#" class="link">Link 2</a>
+							<p><a href="#" class="link panel-open" data-panel="left">Link 1</a></p>
+							<!--工具栏连接 直连为啥没用？-->
+							<a href="page/about.html" class="link" id="clickExample">Link 2</a>							
 						</div>
 					</div>
-					
+
 					<!--内容，可以滑动-->
 					<div class="page-content">
 						<p>卓能三人行</p>
