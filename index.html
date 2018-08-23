@@ -3,33 +3,34 @@
 
 	<head>
 		<meta charset="UTF-8">
-		<meta name="viewport" content="width=device-width, 
-		 	initial-scale=1, maximum-scale=1, minimum-scale=1, 
-		 	user-scalable=no, minimal-ui, viewport-fit=cover">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, viewport-fit=cover">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="default">
 		<meta name="theme-color" content="#2196f3">
 		<title>Framework7 Demo</title>
-
+		<meta http-equiv="Content-Security-Policy" content="default-src * 'self' 'unsafe-inline' 'unsafe-eval' data: gap:">
 		<!-- 导入Framework7的css -->
 		<link rel="stylesheet" href="frameworks/framework7/css/framework7.min.css">
 		<!-- 导入自己的css -->
 		<link rel="stylesheet" href="css/index.css" />
-		<script src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+		<link rel="apple-touch-icon" href="img/f7-icon-square.png">
+		<link rel="icon" href="img/f7-icon.png">
 	</head>
 
 	<body>
 		<!--app root 这个要有-->
 		<div id="app">
+			<!--状态栏？-->
+			<div class="statusbar"></div>
 			<!--左边栏-->
 			<div class="panel panel-left panel-cover response-reciver">
 				<p>我的天，这又是干啥的？</p>
 			</div>
-
-			<!--状态栏？-->
-			<div class="statusbar"></div>
+			
 			<!--主viwe class好像必须是view-main 好像是必须有的-->
-			<div class="view view-main">
+			<div class="view view-main view-init ios-edges" data-url="/">
 				<!--初始化页面，不知道干嘛-->
-				<div data-name="home" class="page">
+				<div  class="page">
 					<!--导航栏-->
 					<div class="navbar">
 						<div class="navbar-inner">
@@ -47,16 +48,18 @@
 								<a href="#" class="link panel-open" data-panel="left">Link 1</a>
 							</p>
 							<!--工具栏连接 直连为啥没用？-->
-							<a href="page/about.html" class="link" id="clickExample">Link 2</a>
+							<a href="#" class="link" id="clickExample">Link 2</a>
 						</div>
 					</div>
 
 					<!--内容，可以滑动-->
 					<div class="page-content">
+						<a href="/about/">wwe</a>
 						<p class="articles">卓能三人行</p>
 						<button class="col button button-fill color-green" id="first-btn">天下無雙</button>
-						<a href="/" class="back">wtf</a>
+
 						<div class="my-content">
+							<p></p>
 						</div>
 					</div>
 				</div>
@@ -74,11 +77,12 @@
 					</div>
 				</div>
 			</div>
-			
+
 		</div>
 		<!--导入Framework7的js-->
 		<script type="text/javascript" src="frameworks/framework7/js/framework7.min.js"></script>
 		<!--导入自己的js-->
+		<script src="js/routes.js"></script>		
 		<script type="text/javascript" src="js/index.js"></script>
 	</body>
 
