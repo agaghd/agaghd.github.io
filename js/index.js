@@ -41,7 +41,7 @@ var $$ = Dom7;
 
 //点击事件样例
 $$('#clickExample').on('click', function(event) {
-	Framework7.request.post(
+	Framework7.request.get(
 		'https://agaghd.github.io/page/about.html', {},
 		function(data) {
 			console.log(data);
