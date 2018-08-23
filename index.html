@@ -8,7 +8,7 @@
 		 	user-scalable=no, minimal-ui, viewport-fit=cover">
 		<meta name="theme-color" content="#2196f3">
 		<title>Framework7 Demo</title>
-	
+
 		<!-- 导入Framework7的css -->
 		<link rel="stylesheet" href="frameworks/framework7/css/framework7.min.css">
 		<!-- 导入自己的css -->
@@ -43,19 +43,38 @@
 					<!--工具栏-->
 					<div class="toolbar">
 						<div class="toolbar-inner">
-							<p><a href="#" class="link panel-open" data-panel="left">Link 1</a></p>
+							<p>
+								<a href="#" class="link panel-open" data-panel="left">Link 1</a>
+							</p>
 							<!--工具栏连接 直连为啥没用？-->
-							<a href="page/about.html" class="link" id="clickExample">Link 2</a>							
+							<a href="page/about.html" class="link" id="clickExample">Link 2</a>
 						</div>
 					</div>
 
 					<!--内容，可以滑动-->
 					<div class="page-content">
 						<p class="articles">卓能三人行</p>
+						<button class="col button button-fill color-green" id="first-btn">天下無雙</button>
+						<a href="/" class="back">wtf</a>
+						<div class="my-content">
+						</div>
 					</div>
 				</div>
 
 			</div>
+
+			<!-- Another view -->
+			<div class="view another-view">
+				<!-- Pages -->
+				<div class="pages">
+					<div class="page" data-page="home-another">
+						<div class="page-content">
+							... page content goes here ...
+						</div>
+					</div>
+				</div>
+			</div>
+			
 		</div>
 		<!--导入Framework7的js-->
 		<script type="text/javascript" src="frameworks/framework7/js/framework7.min.js"></script>
