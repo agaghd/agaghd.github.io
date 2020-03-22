@@ -5,6 +5,7 @@ var kawaiiBot = function (msg, count, delay) {
     if (!delay || delay < 1000) {
         delay = 1000
     }
+    console.log('发送 \'' + msg + "\' , 剩余 " + count + " 次")
     var chatInput = document.getElementsByClassName('chat-input')[0]
     chatInput.value = msg
     var chatInputChangeEvent = new InputEvent('input')
