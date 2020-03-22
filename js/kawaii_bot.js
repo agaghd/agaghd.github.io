@@ -2,6 +2,9 @@ var kawaiiBot = function (msg, count, delay) {
     if (count <= 0) {
         return
     }
+    if (!delay || delay < 1000) {
+        delay = 1000
+    }
     var chatInput = document.getElementsByClassName('chat-input')[0]
     chatInput.value = msg
     var chatInputChangeEvent = new InputEvent('input')
@@ -14,5 +17,4 @@ var kawaiiBot = function (msg, count, delay) {
             kawaiiBot(msg, count, delay)
         }, delay)
     }, 1000)
-
 }
